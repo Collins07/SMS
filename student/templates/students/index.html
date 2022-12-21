@@ -61,6 +61,15 @@
                         </thead>
                         <tbody>
                           {% for student in students %}
+                          <tr>
+                            <td>{{student.students_number}}</td>
+                            <td>{{student.first_name}}</td>
+                            <td>{{student.last_name}}</td>
+                            <td>{{student.email}}</td>
+                            <td>{{student.field_of_study}}</td>
+                            <td>{{student.gpa}}</td>
+                            <td>ACTIONS</td>
+                          </tr>
                           {% endfor %}
                         </tbody>
                       </table>
