@@ -18,7 +18,7 @@ def add(request):
     if request.method == 'POST':
         form = StudentForm(request.POST)
         if form.is_valid():
-            new_student_number = form.cleaned_data['student_number']
+            new_students_number = form.cleaned_data['students_number']
             new_first_name = form.cleaned_data['first_name']
             new_last_name = form.cleaned_data['last_name']
             new_email = form.cleaned_data['email']
@@ -26,7 +26,7 @@ def add(request):
             new_gpa = form.cleaned_data['gpa']
 
             new_student = Student (
-                student_number = new_student_number,
+                students_number = new_students_number,
                 first_name = new_first_name,
                 last_name = new_last_name,
                 email = new_email,
